@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">EasyConnect</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    //Runtime Permission
+    <string name="permission_message">Please grant Camera permission to Scan QR Code</string>
+    <string name="permission_title">Camera permission</string>
+    <string name="permission_camera_message">Camera permission is required to Scan RQ Code</string>
+    <string name="camera_permission_toast">Please grant camera permission</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="register_btn">Register</string>
+    <string name="discovery_btn">Discover</string>
+    <string name="say_hello_btn">Say Hello!</string>
+    <string name="devices_not_found_toast">No Service found yet...</string>
+    <string name="select_mode_dlg_msg">Select if you want to discover or register a service.</string>
+    <string name="discover_dlg_btn">Discover</string>
+    <string name="register_dlg_btn">Register</string>
+
+    <string name="mdns_scan">Scan Configurators</string>
+    <string name="ap_uri">Get AP DPP URI</string>
+    <string name="add_configurator">Add configurator manually</string>
+
+    <string name="server_error">Unable to connect to server</string>
+    <string name="config_scan">manual_config_scan</string>
+    <string name="http">http:/</string>
+
+</resources>

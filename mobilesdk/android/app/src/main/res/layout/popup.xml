@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="160dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/fav_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popup_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_add_configurator"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:textSize="14sp"
+                android:gravity="center|center_vertical"
+                android:text="@string/add_configurator"
+                android:textColor="@color/color_black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="@color/color_black"/>
+
+            <TextView
+                android:id="@+id/txt_mdns_scan"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:textSize="14sp"
+                android:gravity="center|center_vertical"
+                android:text="@string/mdns_scan"
+                android:textColor="@color/color_black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="@color/color_black"/>
+
+            <TextView
+                android:id="@+id/txt_get_uri"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:gravity="center|center_vertical"
+                android:text="@string/ap_uri"
+                android:textColor="@color/color_black"
+                android:textSize="14sp"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+       <!-- <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:rotation="90"
+            android:scaleType="fitXY"
+            android:src="@drawable/play_arrow"/>-->
+
+    </LinearLayout>
+
+   <!-- <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:rotation="90"
+        android:scaleType="fitXY"
+        android:src="@drawable/play_arrow"/>-->
+
+</LinearLayout>

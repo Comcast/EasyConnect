@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion root_compilesdkversion
+    buildToolsVersion root_buildtoolsversion
+    defaultConfig {
+        applicationId "com.easyconnect.easyconnectapp.app"
+        minSdkVersion root_minsdkversion
+        targetSdkVersion root_targetsdkversion
+        versionCode root_versioncode
+        versionName root_versionsname
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            testCoverageEnabled true
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            testCoverageEnabled true
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(path: ':easyconnect')
+
+    implementation "androidx.appcompat:appcompat:$rootProject.appcompact"
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintlayout"
+
+    androidTestImplementation "androidx.test:runner:$rootProject.ext.runner"
+    implementation "androidx.recyclerview:recyclerview:$recyclerview_version"
+    implementation "androidx.preference:preference:1.1.0"
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test:rules:1.2.0'
+
+    //UI
+    testImplementation "junit:junit:$rootProject.ext.junit"
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'com.google.dexmaker:dexmaker:1.2'
+    androidTestImplementation 'com.google.dexmaker:dexmaker-mockito:1.2'
+    androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.ext.espresso_core"
+    androidTestImplementation 'androidx.test:core:1.2.0'
+    androidTestImplementation 'androidx.arch.core:core-testing:2.0.0'
+
+    testImplementation "com.google.truth:truth:0.40"
+
+    testImplementation 'org.robolectric:robolectric:4.3'
+    androidTestImplementation 'org.hamcrest:hamcrest-library:1.3'
+
+    // RxJava
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxjava"
+    // RxAndroid
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxandroid"
+
+
+    // standard retrofit dependency
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.gson"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.interceptor"
+    implementation "com.squareup.retrofit2:converter-scalars:$rootProject.scalars"
+
+    //you need this to use RxAndroid with retrofit.
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rootProject.ext.retrofit"
+    implementation "com.squareup.retrofit2:adapter-rxjava:$rootProject.ext.retrofit"
+
+    //room db
+    implementation "androidx.room:room-runtime:$rootProject.ext.room"
+    annotationProcessor "androidx.room:room-compiler:$rootProject.ext.room"
+
+    //Live Data dependency
+    implementation 'android.arch.lifecycle:extensions:' + rootProject.ext.archLifecycleVersion
+    annotationProcessor 'android.arch.lifecycle:compiler:' + rootProject.ext.archLifecycleVersion
+
+    //barcode scanner
+    implementation "me.dm7.barcodescanner:zxing:$rootProject.ext.zxing"
+
+    //timber for logging
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timber"
+
+    implementation 'com.journeyapps:zxing-android-embedded:3.2.0@aar'
+}

@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5411C83F23A3C290002A8E27 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5411C83E23A3C290002A8E27 /* APIManager.swift */; };
+		54133891237AF3C40077AAF4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54133890237AF3C40077AAF4 /* Constants.swift */; };
+		54133895237C342A0077AAF4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54133894237C342A0077AAF4 /* Extensions.swift */; };
+		54133899237D56790077AAF4 /* NetworkDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54133898237D56790077AAF4 /* NetworkDataParser.swift */; };
+		5413389B237D64720077AAF4 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5413389A237D64720077AAF4 /* Connectivity.swift */; };
+		5413389F237ED02D0077AAF4 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5413389E237ED02D0077AAF4 /* CustomTableViewCell.swift */; };
+		5420D73423827FAE00E9B42E /* NetserviceDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5420D73323827FAE00E9B42E /* NetserviceDiscovery.swift */; };
+		5420D73A2386B60200E9B42E /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5420D7392386B60200E9B42E /* GlobalData.swift */; };
+		542266902394F20E00205179 /* QRCodeGenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5422668F2394F20E00205179 /* QRCodeGenerateViewController.swift */; };
+		542266922394F33400205179 /* QRCodegenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542266912394F33400205179 /* QRCodegenerator.swift */; };
+		5439E98323A79B0B0002F760 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439E98223A79B0B0002F760 /* Loader.swift */; };
+		5439E98523A8A7760002F760 /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439E98423A8A7760002F760 /* CommonMethods.swift */; };
+		54416E6B239A3AA8003EEAAF /* TextLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54416E6A239A3AA8003EEAAF /* TextLog.swift */; };
+		9B0D6F517F3E6CA8831FC625 /* libPods-EasyConnectApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDD2849A2B4A21D606AB8F4 /* libPods-EasyConnectApp.a */; };
+		ADF1DDF023729BD900024AF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1DDEF23729BD900024AF5 /* AppDelegate.swift */; };
+		ADF1DDF223729BD900024AF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1DDF123729BD900024AF5 /* ViewController.swift */; };
+		ADF1DDF523729BD900024AF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF1DDF323729BD900024AF5 /* Main.storyboard */; };
+		ADF1DDF823729BD900024AF5 /* EasyConnectApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADF1DDF623729BD900024AF5 /* EasyConnectApp.xcdatamodeld */; };
+		ADF1DDFA23729BDB00024AF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF1DDF923729BDB00024AF5 /* Assets.xcassets */; };
+		ADF1DDFD23729BDB00024AF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF1DDFB23729BDB00024AF5 /* LaunchScreen.storyboard */; };
+		ADF1DE0823729BDB00024AF5 /* EasyConnectAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1DE0723729BDB00024AF5 /* EasyConnectAppTests.swift */; };
+		ADF1DE1323729BDB00024AF5 /* EasyConnectAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1DE1223729BDB00024AF5 /* EasyConnectAppUITests.swift */; };
+		ADF1DE2123729D7300024AF5 /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1DE2023729D7300024AF5 /* QRScanViewController.swift */; };
+		ADF1DE232372A68100024AF5 /* MDNSDiscoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1DE222372A68100024AF5 /* MDNSDiscoveryController.swift */; };
+		ADF1DE252375360500024AF5 /* QRScanCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1DE242375360500024AF5 /* QRScanCode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADF1DE0423729BDB00024AF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADF1DDE423729BD900024AF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADF1DDEB23729BD900024AF5;
+			remoteInfo = EasyConnectApp;
+		};
+		ADF1DE0F23729BDB00024AF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADF1DDE423729BD900024AF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADF1DDEB23729BD900024AF5;
+			remoteInfo = EasyConnectApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		274AF2EBE22A06734305FC52 /* Pods-EasyConnectApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyConnectApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyConnectApp/Pods-EasyConnectApp.release.xcconfig"; sourceTree = "<group>"; };
+		3CF359075F15E1D6391AB593 /* Pods-EasyConnectApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyConnectApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyConnectApp/Pods-EasyConnectApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5411C83E23A3C290002A8E27 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		54133890237AF3C40077AAF4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		54133894237C342A0077AAF4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		54133898237D56790077AAF4 /* NetworkDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataParser.swift; sourceTree = "<group>"; };
+		5413389A237D64720077AAF4 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		5413389E237ED02D0077AAF4 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		5420D73323827FAE00E9B42E /* NetserviceDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetserviceDiscovery.swift; sourceTree = "<group>"; };
+		5420D7392386B60200E9B42E /* GlobalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
+		5422668F2394F20E00205179 /* QRCodeGenerateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerateViewController.swift; sourceTree = "<group>"; };
+		542266912394F33400205179 /* QRCodegenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodegenerator.swift; sourceTree = "<group>"; };
+		5439E98223A79B0B0002F760 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		5439E98423A8A7760002F760 /* CommonMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMethods.swift; sourceTree = "<group>"; };
+		54416E6A239A3AA8003EEAAF /* TextLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLog.swift; sourceTree = "<group>"; };
+		9CDD2849A2B4A21D606AB8F4 /* libPods-EasyConnectApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyConnectApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF1DDEC23729BD900024AF5 /* EasyConnectApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyConnectApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF1DDEF23729BD900024AF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADF1DDF123729BD900024AF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADF1DDF423729BD900024AF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADF1DDF723729BD900024AF5 /* EasyConnectApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EasyConnectApp.xcdatamodel; sourceTree = "<group>"; };
+		ADF1DDF923729BDB00024AF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADF1DDFC23729BDB00024AF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADF1DDFE23729BDB00024AF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADF1DE0323729BDB00024AF5 /* EasyConnectAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyConnectAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF1DE0723729BDB00024AF5 /* EasyConnectAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyConnectAppTests.swift; sourceTree = "<group>"; };
+		ADF1DE0923729BDB00024AF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADF1DE0E23729BDB00024AF5 /* EasyConnectAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyConnectAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF1DE1223729BDB00024AF5 /* EasyConnectAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyConnectAppUITests.swift; sourceTree = "<group>"; };
+		ADF1DE1423729BDB00024AF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADF1DE2023729D7300024AF5 /* QRScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanViewController.swift; sourceTree = "<group>"; };
+		ADF1DE222372A68100024AF5 /* MDNSDiscoveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDNSDiscoveryController.swift; sourceTree = "<group>"; };
+		ADF1DE242375360500024AF5 /* QRScanCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanCode.swift; sourceTree = "<group>"; wrapsLines = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADF1DDE923729BD900024AF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B0D6F517F3E6CA8831FC625 /* libPods-EasyConnectApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF1DE0023729BDB00024AF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF1DE0B23729BDB00024AF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5411C84423A78266002A8E27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5411C83E23A3C290002A8E27 /* APIManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5411C84523A78505002A8E27 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				54416E6A239A3AA8003EEAAF /* TextLog.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		5411C84623A78657002A8E27 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				5413389E237ED02D0077AAF4 /* CustomTableViewCell.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		5411C84723A78699002A8E27 /* NetworkConnectivity */ = {
+			isa = PBXGroup;
+			children = (
+				5413389A237D64720077AAF4 /* Connectivity.swift */,
+			);
+			path = NetworkConnectivity;
+			sourceTree = "<group>";
+		};
+		5411C84923A786CD002A8E27 /* DataParser */ = {
+			isa = PBXGroup;
+			children = (
+				54133898237D56790077AAF4 /* NetworkDataParser.swift */,
+			);
+			path = DataParser;
+			sourceTree = "<group>";
+		};
+		5411C84A23A78986002A8E27 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5420D7392386B60200E9B42E /* GlobalData.swift */,
+				5439E98423A8A7760002F760 /* CommonMethods.swift */,
+				5439E98223A79B0B0002F760 /* Loader.swift */,
+				54133890237AF3C40077AAF4 /* Constants.swift */,
+				54133894237C342A0077AAF4 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		733B01145BA2435E9AEB4B40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CDD2849A2B4A21D606AB8F4 /* libPods-EasyConnectApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADF1DDE323729BD900024AF5 = {
+			isa = PBXGroup;
+			children = (
+				ADF1DDEE23729BD900024AF5 /* EasyConnectApp */,
+				ADF1DE0623729BDB00024AF5 /* EasyConnectAppTests */,
+				ADF1DE1123729BDB00024AF5 /* EasyConnectAppUITests */,
+				ADF1DDED23729BD900024AF5 /* Products */,
+				AFB001D48400B0877552F4CB /* Pods */,
+				733B01145BA2435E9AEB4B40 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ADF1DDED23729BD900024AF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADF1DDEC23729BD900024AF5 /* EasyConnectApp.app */,
+				ADF1DE0323729BDB00024AF5 /* EasyConnectAppTests.xctest */,
+				ADF1DE0E23729BDB00024AF5 /* EasyConnectAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADF1DDEE23729BD900024AF5 /* EasyConnectApp */ = {
+			isa = PBXGroup;
+			children = (
+				ADF1DDEF23729BD900024AF5 /* AppDelegate.swift */,
+				ADF1DDF123729BD900024AF5 /* ViewController.swift */,
+				5411C84A23A78986002A8E27 /* Utils */,
+				5411C84723A78699002A8E27 /* NetworkConnectivity */,
+				5411C84923A786CD002A8E27 /* DataParser */,
+				5411C84423A78266002A8E27 /* Model */,
+				5411C84523A78505002A8E27 /* Logger */,
+				5411C84623A78657002A8E27 /* CustomCell */,
+				5420D73323827FAE00E9B42E /* NetserviceDiscovery.swift */,
+				5422668F2394F20E00205179 /* QRCodeGenerateViewController.swift */,
+				542266912394F33400205179 /* QRCodegenerator.swift */,
+				ADF1DE222372A68100024AF5 /* MDNSDiscoveryController.swift */,
+				ADF1DE242375360500024AF5 /* QRScanCode.swift */,
+				ADF1DE2023729D7300024AF5 /* QRScanViewController.swift */,
+				ADF1DDF323729BD900024AF5 /* Main.storyboard */,
+				ADF1DDF923729BDB00024AF5 /* Assets.xcassets */,
+				ADF1DDFB23729BDB00024AF5 /* LaunchScreen.storyboard */,
+				ADF1DDFE23729BDB00024AF5 /* Info.plist */,
+				ADF1DDF623729BD900024AF5 /* EasyConnectApp.xcdatamodeld */,
+			);
+			path = EasyConnectApp;
+			sourceTree = "<group>";
+		};
+		ADF1DE0623729BDB00024AF5 /* EasyConnectAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADF1DE0723729BDB00024AF5 /* EasyConnectAppTests.swift */,
+				ADF1DE0923729BDB00024AF5 /* Info.plist */,
+			);
+			path = EasyConnectAppTests;
+			sourceTree = "<group>";
+		};
+		ADF1DE1123729BDB00024AF5 /* EasyConnectAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADF1DE1223729BDB00024AF5 /* EasyConnectAppUITests.swift */,
+				ADF1DE1423729BDB00024AF5 /* Info.plist */,
+			);
+			path = EasyConnectAppUITests;
+			sourceTree = "<group>";
+		};
+		AFB001D48400B0877552F4CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CF359075F15E1D6391AB593 /* Pods-EasyConnectApp.debug.xcconfig */,
+				274AF2EBE22A06734305FC52 /* Pods-EasyConnectApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADF1DDEB23729BD900024AF5 /* EasyConnectApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF1DE1723729BDB00024AF5 /* Build configuration list for PBXNativeTarget "EasyConnectApp" */;
+			buildPhases = (
+				A3AB0F7F800A60FABE76676A /* [CP] Check Pods Manifest.lock */,
+				ADF1DDE823729BD900024AF5 /* Sources */,
+				ADF1DDE923729BD900024AF5 /* Frameworks */,
+				ADF1DDEA23729BD900024AF5 /* Resources */,
+				565751AF23C334D0000E2D3E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyConnectApp;
+			productName = EasyConnectApp;
+			productReference = ADF1DDEC23729BD900024AF5 /* EasyConnectApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADF1DE0223729BDB00024AF5 /* EasyConnectAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF1DE1A23729BDB00024AF5 /* Build configuration list for PBXNativeTarget "EasyConnectAppTests" */;
+			buildPhases = (
+				ADF1DDFF23729BDB00024AF5 /* Sources */,
+				ADF1DE0023729BDB00024AF5 /* Frameworks */,
+				ADF1DE0123729BDB00024AF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADF1DE0523729BDB00024AF5 /* PBXTargetDependency */,
+			);
+			name = EasyConnectAppTests;
+			productName = EasyConnectAppTests;
+			productReference = ADF1DE0323729BDB00024AF5 /* EasyConnectAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADF1DE0D23729BDB00024AF5 /* EasyConnectAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF1DE1D23729BDB00024AF5 /* Build configuration list for PBXNativeTarget "EasyConnectAppUITests" */;
+			buildPhases = (
+				ADF1DE0A23729BDB00024AF5 /* Sources */,
+				ADF1DE0B23729BDB00024AF5 /* Frameworks */,
+				ADF1DE0C23729BDB00024AF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADF1DE1023729BDB00024AF5 /* PBXTargetDependency */,
+			);
+			name = EasyConnectAppUITests;
+			productName = EasyConnectAppUITests;
+			productReference = ADF1DE0E23729BDB00024AF5 /* EasyConnectAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADF1DDE423729BD900024AF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = XXX;
+				TargetAttributes = {
+					ADF1DDEB23729BD900024AF5 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					ADF1DE0223729BDB00024AF5 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = ADF1DDEB23729BD900024AF5;
+					};
+					ADF1DE0D23729BDB00024AF5 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = ADF1DDEB23729BD900024AF5;
+					};
+				};
+			};
+			buildConfigurationList = ADF1DDE723729BD900024AF5 /* Build configuration list for PBXProject "EasyConnectApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADF1DDE323729BD900024AF5;
+			productRefGroup = ADF1DDED23729BD900024AF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADF1DDEB23729BD900024AF5 /* EasyConnectApp */,
+				ADF1DE0223729BDB00024AF5 /* EasyConnectAppTests */,
+				ADF1DE0D23729BDB00024AF5 /* EasyConnectAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADF1DDEA23729BD900024AF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF1DDFD23729BDB00024AF5 /* LaunchScreen.storyboard in Resources */,
+				ADF1DDFA23729BDB00024AF5 /* Assets.xcassets in Resources */,
+				ADF1DDF523729BD900024AF5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF1DE0123729BDB00024AF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF1DE0C23729BDB00024AF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		565751AF23C334D0000E2D3E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+		A3AB0F7F800A60FABE76676A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyConnectApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADF1DDE823729BD900024AF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF1DE232372A68100024AF5 /* MDNSDiscoveryController.swift in Sources */,
+				ADF1DE2123729D7300024AF5 /* QRScanViewController.swift in Sources */,
+				5413389F237ED02D0077AAF4 /* CustomTableViewCell.swift in Sources */,
+				5439E98523A8A7760002F760 /* CommonMethods.swift in Sources */,
+				5439E98323A79B0B0002F760 /* Loader.swift in Sources */,
+				5411C83F23A3C290002A8E27 /* APIManager.swift in Sources */,
+				5420D73A2386B60200E9B42E /* GlobalData.swift in Sources */,
+				542266922394F33400205179 /* QRCodegenerator.swift in Sources */,
+				5413389B237D64720077AAF4 /* Connectivity.swift in Sources */,
+				54416E6B239A3AA8003EEAAF /* TextLog.swift in Sources */,
+				ADF1DE252375360500024AF5 /* QRScanCode.swift in Sources */,
+				54133895237C342A0077AAF4 /* Extensions.swift in Sources */,
+				ADF1DDF223729BD900024AF5 /* ViewController.swift in Sources */,
+				54133899237D56790077AAF4 /* NetworkDataParser.swift in Sources */,
+				5420D73423827FAE00E9B42E /* NetserviceDiscovery.swift in Sources */,
+				54133891237AF3C40077AAF4 /* Constants.swift in Sources */,
+				ADF1DDF023729BD900024AF5 /* AppDelegate.swift in Sources */,
+				542266902394F20E00205179 /* QRCodeGenerateViewController.swift in Sources */,
+				ADF1DDF823729BD900024AF5 /* EasyConnectApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF1DDFF23729BDB00024AF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF1DE0823729BDB00024AF5 /* EasyConnectAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF1DE0A23729BDB00024AF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF1DE1323729BDB00024AF5 /* EasyConnectAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADF1DE0523729BDB00024AF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADF1DDEB23729BD900024AF5 /* EasyConnectApp */;
+			targetProxy = ADF1DE0423729BDB00024AF5 /* PBXContainerItemProxy */;
+		};
+		ADF1DE1023729BDB00024AF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADF1DDEB23729BD900024AF5 /* EasyConnectApp */;
+			targetProxy = ADF1DE0F23729BDB00024AF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADF1DDF323729BD900024AF5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADF1DDF423729BD900024AF5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADF1DDFB23729BDB00024AF5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADF1DDFC23729BDB00024AF5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADF1DE1523729BDB00024AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADF1DE1623729BDB00024AF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADF1DE1823729BDB00024AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CF359075F15E1D6391AB593 /* Pods-EasyConnectApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = G9LU86UHDX;
+				INFOPLIST_FILE = EasyConnectApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EasyConnectApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = EasyConnectApp;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADF1DE1923729BDB00024AF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 274AF2EBE22A06734305FC52 /* Pods-EasyConnectApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = G9LU86UHDX;
+				INFOPLIST_FILE = EasyConnectApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EasyConnectApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = EasyConnectApp;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ADF1DE1B23729BDB00024AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9LU86UHDX;
+				INFOPLIST_FILE = EasyConnectAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EasyConnectAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyConnectApp.app/EasyConnectApp";
+			};
+			name = Debug;
+		};
+		ADF1DE1C23729BDB00024AF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9LU86UHDX;
+				INFOPLIST_FILE = EasyConnectAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EasyConnectAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyConnectApp.app/EasyConnectApp";
+			};
+			name = Release;
+		};
+		ADF1DE1E23729BDB00024AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9LU86UHDX;
+				INFOPLIST_FILE = EasyConnectAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EasyConnectAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyConnectApp;
+			};
+			name = Debug;
+		};
+		ADF1DE1F23729BDB00024AF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9LU86UHDX;
+				INFOPLIST_FILE = EasyConnectAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EasyConnectAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyConnectApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADF1DDE723729BD900024AF5 /* Build configuration list for PBXProject "EasyConnectApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF1DE1523729BDB00024AF5 /* Debug */,
+				ADF1DE1623729BDB00024AF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADF1DE1723729BDB00024AF5 /* Build configuration list for PBXNativeTarget "EasyConnectApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF1DE1823729BDB00024AF5 /* Debug */,
+				ADF1DE1923729BDB00024AF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADF1DE1A23729BDB00024AF5 /* Build configuration list for PBXNativeTarget "EasyConnectAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF1DE1B23729BDB00024AF5 /* Debug */,
+				ADF1DE1C23729BDB00024AF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADF1DE1D23729BDB00024AF5 /* Build configuration list for PBXNativeTarget "EasyConnectAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF1DE1E23729BDB00024AF5 /* Debug */,
+				ADF1DE1F23729BDB00024AF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ADF1DDF623729BD900024AF5 /* EasyConnectApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ADF1DDF723729BD900024AF5 /* EasyConnectApp.xcdatamodel */,
+			);
+			currentVersion = ADF1DDF723729BD900024AF5 /* EasyConnectApp.xcdatamodel */;
+			path = EasyConnectApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ADF1DDE423729BD900024AF5 /* Project object */;
+}

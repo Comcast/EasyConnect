@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="homeactivity"
+            type="com.easyconnect.easyconnectapp.app.view.MainActivity" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="EasyConnect"
+            android:textColor="#FDD061"
+            android:textSize="32sp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewConsole"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="120dp"
+            android:background="@drawable/dialog_border"
+            android:visibility="visible"/>
+
+        <me.dm7.barcodescanner.zxing.ZXingScannerView
+            android:id="@+id/zXingScannerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="120dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/linBottom"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="05dp"
+            android:weightSum="1"
+            tools:context="com.easyconnect.easyconnectapp.app.view.MainActivity">
+
+            <Button
+                android:id="@+id/btn_ScanQR"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".4"
+                android:layout_marginRight="05dp"
+                android:background="@drawable/button_border"
+                android:onClick="@{homeactivity::onClick}"
+                android:padding="10dp"
+                android:text="Scan QR Code"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_show_qrcode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".4"
+                android:background="@drawable/button_border"
+                android:onClick="@{homeactivity::onClick}"
+                android:padding="10dp"
+                android:text="Show AP QR Code"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_scan_mdns"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".4"
+                android:background="@drawable/button_border"
+                android:onClick="@{homeactivity::onClick}"
+                android:padding="10dp"
+                android:text="Scan MDNS Configurator"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:contentDescription="@null"
+                android:id="@+id/imv_settings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:onClick="@{homeactivity::onClick}"
+                android:src="@drawable/icon_settings"></ImageView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">easyconnect</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    //Runtime Permission
+    <string name="permission_message">Please grant Camera permission to Scan QR Code</string>
+    <string name="permission_title">Camera permission</string>
+    <string name="permission_camera_message">Camera permission is required to Scan RQ Code</string>
+    <string name="camera_permission_toast">Please grant camera permission</string>
+
+    <string name="dppuri">dppUri</string>
+    <string name="mdns_dpp_uri">DPP_URI</string>
+    <string name="mdns_port">MDNS_PORT</string>
+    <string name="mdns_ip">MDNS_IP</string>
+
+    <string name="token">Auth_token</string>
+    <string name="dpp_for_qrcode">Dpp for QR code Generator</string>
+
+    <string name="message_error">Error</string>
+    <string name="message_succes">Success</string>
+    <string name="message_setting">Settings</string>
+
+    <string name="message_scan_configurators">Scanning for Configurators...</string>
+    <string name="detected_configurator">Detected below configurator</string>
+    <string name="detected_configurators">Detected below configurators</string>
+    <string name="message_no_config_detected">No configurators detected.</string>
+    <string name="message_manual_configurator">Manual Configurator detected</string>
+    <string name="message_config_connection_error">Unable to connect to configurator. Start MDNS Scan from settings</string>
+    <string name="message_enter_config_details">No configurators detected. Do you want to manually enter the configurator IP and port?</string>
+    <string name="message_user_enter_config_details">Manually enter the configurator IP and port</string>
+    <string name="error_update_config_details">No configurators detected. Do you want to manually enter the configurator IP and port? Enter correct IP and PORT</string>
+    <string name="error_no_configurators_detected">No configurators detected. Please ensure configurator is on and click Scan for Configurator from the settings menu</string>
+    <string name="message_success">Received message Success from configurator with Status code 200</string>
+    <string name="error_temporaray_redirect">Temporary Redirect</string>
+    <string name="message_temporary_redirect">Received error Temporary redirect from configurator with Status code 307</string>
+    <string name="error_bad_request">Bad Request or Invalid parameters</string>
+    <string name="message_bad_request">Received error Bad Request or Invalid parameters from configurator with Status code 400</string>
+    <string name="error_notfound">Not Found</string>
+    <string name="message_dpp_initiates">DPP Connection initiated</string>
+
+    <string name="message_not_found">Received error Not Found from configurator with Status code 404</string>
+    <string name="message_internal_server_error">Received error Internal Server Error from configurator with Status code 500</string>
+    <string name="message_sending_uri">Sending URI to configurator</string>
+    <string name="message_passphrase_requested">WiFi passphrase requested</string>
+    <string name="message_passphrase_sent">WiFi passphrase sent</string>
+    <string name="message_wifi_passphrase">Enter WiFi passphrase</string>
+
+    <string name="error_internal_">Internal Server Error</string>
+
+    <string name="message_selected">Selected</string>
+    <string name="message_configurator">as Configurator</string>
+
+    //get DPP URI
+    <string name="message_success_dpp">Received access point DPP URI successfully</string>
+    <string name="success_dpp">Received access point DPP URI successfully</string>
+    <string name="error_temporaray_redirect_dpp">Temporary Redirect. DPP URI of AP not received</string>
+    <string name="message_temporary_redirect_dpp">Received error Temporary redirect from configurator with Status code 307</string>
+    <string name="error_bad_request_dpp">:Bad Request or Invalid parameters.DPP URI of AP not received</string>
+    <string name="message_bad_request_dpp">Received error Bad Request or Invalid parameters from configurator with Status code 400</string>
+    <string name="error_notfound_dpp">Not Found.DPP URI of AP not received</string>
+    <string name="message_not_found_dpp">Received error Not Found from configurator with Status code 404</string>
+    <string name="error_internal_dpp">Internal Server Error.DPP URI of AP not received</string>
+    <string name="message_internal_server_errordpp_dpp">Received error Internal Server Error from configurator with Status code 500</string>
+
+</resources>

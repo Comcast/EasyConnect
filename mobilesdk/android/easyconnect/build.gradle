@@ -1,0 +1,66 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+
+    defaultConfig {
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "androidx.appcompat:appcompat:$rootProject.appcompact"
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintlayout"
+    testImplementation "junit:junit:$rootProject.ext.junit"
+    androidTestImplementation "androidx.test:runner:$rootProject.ext.runner"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.ext.espresso_core"
+    implementation "androidx.recyclerview:recyclerview:$recyclerview_version"
+
+    //Live Data dependency
+    implementation 'android.arch.lifecycle:extensions:' + rootProject.ext.archLifecycleVersion
+    annotationProcessor 'android.arch.lifecycle:compiler:' + rootProject.ext.archLifecycleVersion
+
+    //barcode scanner
+    implementation "me.dm7.barcodescanner:zxing:$rootProject.ext.zxing"
+
+    // standard retrofit dependency
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.gson"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.interceptor"
+    implementation "com.squareup.retrofit2:converter-scalars:$rootProject.scalars"
+
+    //you need this to use RxAndroid with retrofit.
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    //implementation "com.squareup.retrofit2:adapter-rxjava:2.4.0"
+
+    // RxJava
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.3'
+    // RxAndroid
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+
+    //QR Code Generator
+    implementation 'com.journeyapps:zxing-android-embedded:3.2.0@aar'
+
+}

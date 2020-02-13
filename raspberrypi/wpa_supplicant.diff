@@ -1,0 +1,31 @@
+diff --git a/src/common/dpp.c b/src/common/dpp.c
+index ab7072cf6..1537129ab 100644
+--- a/src/common/dpp.c
++++ b/src/common/dpp.c
+@@ -3342,11 +3342,13 @@ dpp_auth_req_rx(void *msg_ctx, u8 dpp_allowed_roles, int qr_mutual,
+ 		auth->configurator = 1;
+ 		break;
+ 	case DPP_CAPAB_CONFIGURATOR:
++#if 0
+ 		if (!(dpp_allowed_roles & DPP_CAPAB_ENROLLEE)) {
+ 			wpa_printf(MSG_DEBUG,
+ 				   "DPP: Local policy does not allow Enrollee role");
+ 			goto not_compatible;
+ 		}
++#endif
+ 		wpa_printf(MSG_DEBUG, "DPP: Acting as Enrollee");
+ 		auth->configurator = 0;
+ 		break;
+diff --git a/wpa_supplicant/wpa_supplicant.c b/wpa_supplicant/wpa_supplicant.c
+index 6688d71af..c4d4481f8 100644
+--- a/wpa_supplicant/wpa_supplicant.c
++++ b/wpa_supplicant/wpa_supplicant.c
+@@ -4592,6 +4592,8 @@ void wpa_supplicant_rx_eapol(void *ctx, const u8 *src_addr,
+ 		 */
+ 		eapol_sm_notify_portValid(wpa_s->eapol, TRUE);
+ 	}
++	/* Modification to get it running in Raspbeery PI */
++	wpa_sm_rx_eapol(wpa_s->wpa, src_addr, buf, len);
+ }
+ 
+ 

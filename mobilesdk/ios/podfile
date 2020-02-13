@@ -1,0 +1,5 @@
+target 'EasyConnectApp' do
+  pod 'Alamofire'
+  pod 'AMDots'
+  pod 'SwiftKeychainWrapper', '~> 3.4'
+end
